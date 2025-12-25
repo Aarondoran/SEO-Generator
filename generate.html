@@ -2,41 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SEO Head Generator</title>
+  <title>Head Generator</title>
   <link rel="stylesheet" href="generate.css">
 </head>
 <body>
 
-<h1>Website Head Tag Generator</h1>
+<main>
+  <h1>Head Generator</h1>
 
-<label>Page Title</label>
-<input id="name" required>
+  <div class="form-group">
+    <label>Page Title</label>
+    <input id="name" required>
+  </div>
 
-<label>Website Subtitle</label>
-<input id="title" required>
+  <div class="form-group">
+    <label>Website Subtitle</label>
+    <input id="title" required>
+  </div>
 
-<label>Website URL</label>
-<input id="url" required>
+  <div class="form-group">
+    <label>Website URL</label>
+    <input id="url" required>
+  </div>
 
-<label>Description</label>
-<textarea id="description" required></textarea>
+  <div class="form-group">
+    <label>Description</label>
+    <textarea id="description" required></textarea>
+  </div>
 
-<label>Keywords</label>
-<textarea id="keywords" required></textarea>
+  <div class="form-group">
+    <label>Keywords</label>
+    <textarea id="keywords" required></textarea>
+  </div>
 
-<label>Author</label>
-<input id="author" required>
+  <div class="form-group">
+    <label>Author</label>
+    <input id="author" required>
+  </div>
 
-<label>Banner Image Path</label>
-<input id="banner" required>
+  <div class="form-group">
+    <label>Banner Image Path</label>
+    <input id="banner" required>
+  </div>
 
-<label>Profile Image Path</label>
-<input id="pfp" required>
+  <div class="form-group">
+    <label>Profile Image Path</label>
+    <input id="pfp" required>
+  </div>
 
-<div class="actions">
-  <button id="generate">Generate</button>
-  <button id="copy">Copy</button>
-</div>
+  <div class="actions">
+    <button id="generate">Generate</button>
+    <button id="copy">Copy</button>
+  </div>
+</main>
 
 <pre id="output"></pre>
 
