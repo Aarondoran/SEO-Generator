@@ -202,3 +202,14 @@ pre::selection {
     margin-bottom: 20px;
   }
 }
+.actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+#copy.copied {
+  background: linear-gradient(180deg, #22c55e, #16a34a);
+  border-color: #22c55e;
+}
+
