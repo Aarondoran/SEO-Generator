@@ -1,6 +1,11 @@
 const output = document.getElementById("output")
+const generateBtn = document.getElementById("generate")
+const copyBtn = document.getElementById("copy")
 
-document.getElementById("generate").onclick = () => {
+generateBtn.onclick = () => {
+  const fields = [...document.querySelectorAll("input, textarea")]
+  if (!fields.every(f => f.value.trim())) return
+
   const name = document.getElementById("name").value
   const title = document.getElementById("title").value
   const url = document.getElementById("url").value
@@ -39,4 +44,15 @@ document.getElementById("generate").onclick = () => {
 <meta property="twitter:title" content="${name} | ${title}" />
 <meta property="twitter:description" content="${description}" />
 <meta property="twitter:image" content="${banner}" />`
+}
+
+copyBtn.onclick = async () => {
+  if (!output.textContent) return
+  await navigator.clipboard.writeText(output.textContent)
+  copyBtn.classList.add("copied")
+  copyBtn.textContent = "Copied"
+  setTimeout(() => {
+    copyBtn.classList.remove("copied")
+    copyBtn.textContent = "Copy"
+  }, 1500)
 }
