@@ -10,26 +10,22 @@
 
 * {
   box-sizing: border-box;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.page {
-  flex: 1;
+}html, body {
+  min-height: 100%;
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--ui);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 32px;
+}
+
+
+.page {
+  flex: 1;
 }
 
 .centered-container {
