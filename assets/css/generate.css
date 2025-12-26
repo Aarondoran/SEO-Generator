@@ -10,6 +10,7 @@
 
 * {
   box-sizing: border-box;
+}
 }html, body {
   min-height: 100%;
 }
@@ -23,9 +24,9 @@ body {
   font-family: var(--ui);
 }
 
-
 .page {
   flex: 1;
+  padding-top: 64px;
 }
 
 .centered-container {
